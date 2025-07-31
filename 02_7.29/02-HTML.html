@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-HTML</title>
+</head>
+<body>
+    <!-- 2.3 表格标签 -->
+    <table align="center" border="5" cellspacing="0" cellpadding="15" >
+       <thead>
+         <tr>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>年龄</th>
+        </tr>
+       </thead>
+        
+       <tbody>
+        <tr>
+            <td>想哥</td>
+            <td>男</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>李哥</td>
+            <td>未知</td>
+            <td>28</td>
+        </tr>
+        <tr>
+            <td>啊想</td>
+            <td>女</td>
+            <td>38</td>
+        </tr>
+       </tbody>
+    </table>
+
+    <!-- 2.4 列表标签 -->
+     <h4>前端三件套</h4>
+     <ul>
+         <li>HTML</li>
+         <li>CSS</li>
+         <li>Javascript</li>
+     </ul>
+
+     <h4>前端三件套</h4>
+     <ol>
+         <li>HTML</li>
+         <li>CSS</li>
+         <li>Javascript</li>
+     </ol>
+
+     <h4>前端三件套</h4>
+     <dt>
+         <dt>HTML</dt>
+         <dd>HTML5</dd>
+         <dd>HTML4</dd>
+     </dt>
+     <dt>
+         <dt>CSS</dt>
+         <dd>CSS3</dd>
+         <dd>CSS2</dd>
+     </dt>
+     <dt>
+         <dt>Javascript</dt>
+         <dd>ES6</dd>
+         <dd>ES5</dd>
+     </dt>
+
+     </dt>
+
+     <br><br><br><br>
+
+     <!-- 2.5 表单标签 -->
+      <form action="后端***.php" method="get" name="name_test">
+        <strong>用户名：</strong> <input type="text" name="username" value="不必辨认想哥"> <br>
+        <strong>密码：</strong> <input type="password" name="pwd"> <br>
+        <strong>性别：</strong> 
+            <label for="sex_male"><strong>男</strong></label><input type="radio" name="gender" value="male" id="sex_male"> 
+            <strong>女</strong><input type="radio" name="gender" value="female">  
+            <strong>未知</strong><input type="radio" name="gender" value="unknown">   <br>
+
+        <strong>爱好：</strong> 
+            学HTML <input type="checkbox" name="hobby" value="html" >
+            学CSS <input type="checkbox" name="hobby" value="CSS">
+            学Javascript <input type="checkbox" name="hobby" value="Javascript"> <br>
+
+        <input type="submit" value="提交按钮">
+        <input type="button" value="button多数用于启动js脚本" > <br>
+
+        上传文件：<input type="file">
+
+        <h3>籍贯</h3>
+        <select>
+            <option>beijing</option>
+            <option>guangzhou</option>
+            <option>meiguo</option>
+        </select>
+
+        <br>
+
+
+        <textarea >默认文字显示~~~</textarea>
+
+      </form>
+
+    <!-- 案例演示 -->
+     <h1 align="center">案例演示</h1>
+     <form action="**.php" method="get">
+        <table align="center" cellspacing="20" border="0" cellpadding="10">
+            <tr>
+                <td>性别</td>
+                <td><label for="male">男</label><input type="radio" name="gender" id="male" value="male_nan"> 女<input type="radio" name="gender" value="female_nv"></td>
+            </tr>
+
+            <tr>
+                <td>生日</td>
+                <td>
+                    <select name="year">
+                        <option>--选择年份--</option>
+                        <option>2001</option>
+                        <option>2002</option>
+                        <option value="2003">2003</option>
+                    </select>
+                
+                    <select name="month">
+                        <option>--选择月份--</option>
+                        <option>01</option>
+                        <option>02</option>
+                        <option value="03">03</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>情感状况</td>
+                <td>单身<input type="radio" name="wedding"> 恋爱<input type="radio" name="wedding"> 离异<input type="radio" name="wedding" value="divorced"> </td>
+            </tr>
+
+            <tr>
+                <td>喜欢的类型</td>
+                <td>大老鼠<input type="checkbox" name="type" value="bigdick"> 猴<input type="checkbox" name="type" value="monkey"> 猪<input type="checkbox" name="type" value="pig"> 熊<input type="checkbox" name="type" value="bear"></td>
+            </tr>
+
+            <tr>
+                <td>自我介绍</td>
+                <td><textarea>输入你的感情宣言！</textarea></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><input type="submit" value="注册blued"></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><input type="radio" name="rule" value="agree">我同意注册Blued的条款</td>
+            </tr>
+
+        </table>
+     </form>
+
+
+
+
+</body>
+</html>
