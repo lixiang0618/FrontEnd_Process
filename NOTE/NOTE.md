@@ -214,3 +214,91 @@
 在HTML的 **\<head>** 当中用 **\<link>** 标签引入CSS文件，比如：` <link rel="stylesheet" href="style.css"> `  
 
 ![alt text](image-6.png)
+
+参考：*03-CSS.html*  
+
+---
+
+### 3.5 Emmet语法
+> Emmet是HTML和CSS的语法扩展，可以快速生成HTML和CSS代码。  
+
+1. 快速生成HTML结构  
+   - 生成标签：只需要输入 **标签名称**，比如div，然后按Tab键即可生成一个完整的HTML标签。
+   - 多个相同标签：输入标签，比如**div*3**，表示生成三个div标签。
+   - 嵌套标签：输入标签，比如**div>p**，表示生成一个div标签，里面有一个p标签。
+   - 并列标签：输入标签，比如**div+p**，表示生成一个div标签，后面跟着一个p标签。
+   - 类名or id ：输入标签，比如 **#box**，表示生成一个id为box的标签; **.box**，表示生成一个类名为box的标签。
+    ` p#box`可以表示创建p标签，并添加id为box。  
+    - 类名有顺序：用自增符号 **\$**，比如 **.box$5** 表示生成类名为box1到box5的div标签。
+    - 标签内部有文字：用 **{}** 包起来，比如 **div{内容文字}** 表示生成一个div标签，并添加有内容文字。  
+ 
+
+
+2. 快速生成CSS样式
+  - 同上，用首字母＋数字
+
+### 3.6 复合选择器
+> 由多个基础选择器组合，包括 后代选择器、子选择器、并集选择器、伪类选择器等。
+
+**后代选择器**
+ 可以选择父元素里面的子元素，语法是  `元素1 元素2 {声明}` 代表选择元素1里面的元素2  
+
+ **子选择器**
+ 可以选择父元素里面的亲儿子元素，语法是  `元素1 > 元素2 {声明}` 代表选择元素1里面相近一级的元素2  
+
+**并集选择器**
+ 可以同时选择多个元素，语法是  `元素1, 元素2 {声明}` 代表选择元素1和元素2  
+
+ **伪类选择器** 
+ 可以选择元素，语法是  `元素1: 伪类 {声明}` 代表选择元素1的伪类  
+
+ 以下是链接伪类： 
+ ![alt text](image-7.png)
+ 需要按照上面的LVHA顺序来写，确保生效。  
+
+ 以下是焦点伪类：
+ `input:focus {
+   background-color: yellow;
+}`
+
+总结：
+![alt text](image-8.png)
+
+### 3.7 CSS元素显示模式  
+> 一般分为块元素和行内元素  
+
+
+**块元素**
+`<h1>~<h6>、<p>、<div>、<div>、<ul>、<ol>、<li>`等等  
+- 独占一行，高度宽度可控制，宽度默认是父级容器的100%，里面可以放行内元素或块级元素。
+- 文字标签里面不能放块元素，比如p 标签里面不能放div标签。  
+
+**行内元素**
+`<a>、<span>、<img>、<input>、<button>`等等
+- 一行可以显示多个，高宽设置无效，宽度默认是内容宽度，行内元素只能容纳文本和其他行内元素。
+- 链接里面不能直接放链接。
+
+img标签、input标签、td标签同时具有行内元素特点和块元素特点（一行多个但可以设置宽高）。
+
+总结：
+![alt text](image-9.png)
+
+
+**模式转换**
+- 将行内元素转换为块元素：`display: block;` （这样就可以设置宽高了）
+- 将块元素转换为行内元素：`display: inline;`
+- 转换成行内块元素：`display: inline-block;` 
+
+### 3.8 CSS的背景
+CSS的背景属性，可以设置背景颜色、图片、重复方式、位置、透明度。
+- background-color: 背景颜色
+- background-image: 背景图片 不要忘记url 比如 `background-image: url(xxx.png);`
+- background-repeat: 重复方式，有repeat、no-repeat、repeat-x（沿x轴重复）、repeat-y（沿y轴重复）
+- background-position: 背景图片的位置,可以接方位名词or精确单位，比如`background-position: top left;` or `background-position: 0 0;`
+>  水平方向：left、right，垂直方向是top、bottom；
+>  单位：px、%、em等，x从左边开始，y从上面开始。
+- background-attachment: 背景图片的固定方式，有scroll(随着滚动)、fixed(固定)。
+- 半透明效果： `background: rgba(0,0,0,0.5);` a是控制透明度的
+  
+总结：
+![alt text](image-10.png)

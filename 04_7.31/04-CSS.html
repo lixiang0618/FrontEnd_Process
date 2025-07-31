@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复合选择器 & 元素选择模式</title>
+
+    
+    <style>
+
+        /* 后代选择器 */
+        ol li{
+            color: red;
+        }
+
+        ul li{
+            color: blue;
+        }
+
+        /* 子选择器 */
+
+        div > ol li{
+            color: yellow;
+        }
+
+        .second ul li{
+            color: green;
+        }
+
+        /* 并集选择器 */
+        .second ul li , 
+        .first ol li{
+            background-color: black;
+        }
+
+        /* 伪类选择器 */
+        /* 链接 */
+        a:link{
+            color: red;
+        }
+        a:visited{
+            color: pink;
+        }
+        a:hover{
+            color: orange;
+        }
+        a:active{
+            color: white;
+            background-color: black;
+        }
+
+        /* 焦点 */
+        input:focus{
+            background-color: yellow;
+        }
+
+        /* 模式转换 */
+        a{
+            display: block;
+            width: 100px;
+            height: 100px;
+
+            background-color: greenyellow;
+        }
+
+        #test_1{
+            display: inline;
+        }
+
+        #test_2{
+            display: inline;
+        }
+
+        /* 背景 */
+        #background{
+            background-color: pink;
+            background-image: url(../NOTE/image-1.png);
+            height: 3000px;
+            width: 1000px;
+            
+
+            /* 重复/平铺 */
+            background-repeat:no-repeat;
+            /* background-repeat:repeat-x;
+            background-repeat:repeat-y; */
+
+            /* 图像位置 */
+            background-position: center center;
+
+            /* 背景固定 */
+            /* background-attachment: fixed; */
+
+            /* 背景透明度 */
+            /* background: rgba(0, 0, 0, 0.1); */
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <ol>
+        <li>{我是ol的孩子}</li>
+        <li>{我是ol的孩子}</li>
+        <li>{我是ol的孩子}</li>
+    </ol>
+    <ul>
+        <li>{我是ul的孩子}</li>
+        <li>{我是ul的孩子}</li>
+        <li>{我是ul的孩子}</li>
+    </ul>
+
+    <div class="first">
+        <ol>
+            <li>{我是div ol的孩子}</li>
+            <li>{我是div ol的孩子}</li>
+            <li>{我是div ol的孩子}</li>
+        </ol>
+        <ul>
+            <li>{我是div ul的孩子}</li>
+            <li>{我是div ul的孩子}</li>
+            <li>{我是div ul的孩子}</li>
+            <li>{我是div ul的孩子}</li>
+        </ul>
+    </div>
+
+    <div class="second">
+        <ol>
+            <li>{我是div ol的孩子}</li>
+            <li>{我是div ol的孩子}</li>
+            <li>{我是div ol的孩子}</li>
+        </ol>
+        <ul>
+            <li>{我是div ul的孩子}</li>
+            <li>{我是div ul的孩子}</li>
+            <li>{我是div ul的孩子}</li>
+            <li>{我是div ul的孩子}</li>
+        </ul>
+    </div>
+
+    <p><a href="https://www.baidu.com" target="_blank">百度官网</a></p>
+    <a href="https://www.qq.com" target="_blank">腾讯官网</a>
+    <a href="https://www.4399.com" target="_blank">4399官网</a>
+    <a href="https://www.7k7k.com" target="_blank">7k7k官网</a>
+    
+    
+    <p>
+        <input type="text">
+    </p>
+
+
+    <div id="test_1">我是div标签 属于块元素 独占一行......</div>
+    <div id="test_2">我是div标签 属于块元素 独占一行......</div>
+    <div id="test_3">我是div标签 属于块元素 独占一行......</div>
+
+    <div id="background">
+        测试背景
+    </div>
+
+</body>
+</html>
