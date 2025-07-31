@@ -43,83 +43,14 @@ A frontend crafter with a backend brain and a hardware heart.
   </a>
 </p>
 
+### **📌 Projects at a Glance**
+| **Projects** | **Brief Description** |
+|:---------------------------:|:---------------------------------------------------------------:|
+| **LearnGo**                 | iOS learning app with GPT, image OCR, and note generation       |
+| **Wellife AIoT System**     | Real-time food & motion recognition powered by custom hardware and model |
+| **Large Model QA**          | On-premise Qwen-7B with GraphRAG-based SQL retrieval            |
+| **Digital Pet SaaS**        | User prediction via GNN, boosting marketing ROI by 5×           |
 
-<style>
-  body {
-    background: #f0f4f8;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 20px;
-  }
-  .projects-container {
-    max-width: 700px;
-    margin: 0 auto;
-  }
-  .projects-title {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 30px;
-    font-weight: 700;
-    color: #333;
-  }
-
-  .project-card {
-    border-radius: 20px;
-    padding: 25px 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
-    color: white;
-    text-align: center;
-    line-height: 1.4;
-  }
-  /* 每个项目不同背景色 */
-  .project-card:nth-child(2) {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-  }
-  .project-card:nth-child(3) {
-    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-  }
-  .project-card:nth-child(4) {
-    background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
-  }
-  .project-card:nth-child(5) {
-    background: linear-gradient(135deg, #f7971e 0%, #ffd200 100%);
-    color: #222;
-  }
-
-  .project-title {
-    font-weight: 900;
-    font-size: 1.4rem;
-    margin-bottom: 12px;
-  }
-  .project-desc {
-    font-weight: 600;
-    font-size: 1.05rem;
-  }
-</style>
-
-<div class="projects-container">
-  <div class="projects-title">📌 Projects at a Glance</div>
-
-  <div class="project-card">
-    <div class="project-title">LearnGo</div>
-    <div class="project-desc">iOS learning app with RAG, self-trained OCR, and Finetunning</div>
-  </div>
-
-  <div class="project-card">
-    <div class="project-title">Wellife AIoT System</div>
-    <div class="project-desc">Real-time food detection &amp; motion recognition powered by custom hardware and self-trained model</div>
-  </div>
-
-  <div class="project-card">
-    <div class="project-title">Large Model QA</div>
-    <div class="project-desc">On-premise Qwen-7B with GraphRAG-based SQL retrieval</div>
-  </div>
-
-  <div class="project-card">
-    <div class="project-title">Digital Pet SaaS</div>
-    <div class="project-desc">User prediction via GNN, boosting marketing ROI by 5×</div>
-  </div>
-</div>
 
 
 ### ✨ Highlights
