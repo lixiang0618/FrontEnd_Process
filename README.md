@@ -17,7 +17,7 @@ Welcome to **FrontEnd_Process** — a handcrafted collection of my frontend lear
 
 No fluff. No noise. Just solid frontend foundations.
 
-📘 Explore notes: [MagicBook ](https://github.com/lixiang0618/FrontEnd_Process) HAHAHA.....
+📘 Explore notes: [MagicBook ](https://github.com/lixiang0618/FrontEnd_Process/blob/main/NOTE/NOTE.md) HAHAHA.....
 
 ---
 
