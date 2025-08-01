@@ -302,3 +302,67 @@ CSS的背景属性，可以设置背景颜色、图片、重复方式、位置�
   
 总结：
 ![alt text](image-10.png)
+
+参考：04-CSS.html
+
+---
+
+### 3.9 CSS三大特性
+1. **层叠性**（样式冲突时，离得近的或者说后来的样式会覆盖之前的样式）
+2. **继承性**（子标签会继承父标签的样式）
+3. **优先级**（当一个标签元素指定了多个选择器时，选择器权重大的会覆盖权重小的）
+   > **!important** > **行内样式 style=""** > **id选择器** > **类选择器** > **元素标签选择器**（如p） > **继承** or **通配符选择器**
+   > **复合选择器的权重** = **!important** * 10000 + **行内样式** * 1000 + **id选择器** * 100 + **类选择器** * 10 + **元素标签选择器** * 1  
+   ---
+   > 越精确权重越大
+    ---
+
+### 3.10 CSS的盒子模型  
+> 网页布局的核心：盒子模型、浮动、定位。 CSS的盒子模型，包括内容、边框、填充、外边距。  
+
+![alt text](image-11.png)
+边框是boarder，内边距是padding，外边距是margin。
+
+**边框**
+- border-width：一般用px做单位
+- border-color：同其他颜色
+- border-style：看下图，一般是solid、dashed、dotted。
+  ![alt text](image-12.png)
+- border可以简写，比如 **border-top: 1px solid red;**
+
+表格的话table选择器就是外边框，td选择器就是单元格边框。
+- border-collapse：合并相邻的边框，不至于产生两倍的宽度。
+
+边框是在原来盒子的尺寸上加的，所以加边框会把盒子变大。
+
+**内边距**
+- padding-top：设置上内边距。
+- padding-right：设置右内边距。
+- padding-bottom：设置下内边距。
+- padding-left：设置左内边距。
+- 复合写法：
+![alt text](image-13.png)  
+
+内边距是在原来盒子基础上撑大的，所以加内边距会把盒子变大。所以在开发过程中，把原来盒子的宽和高减去你需要流出的内边距。（边框同理）
+
+**案例参考(新浪导航栏)**：参考 Sian_sidebar.html 
+![alt text](image-14.png)
+
+
+**外边距**
+- margin-top：设置上外边距。
+- margin-right：设置右外边距。
+- margin-bottom：设置下外边距。
+- margin-left：设置左外边距。
+- margin复写方式：**margin: 10px 20px 30px 40px;** 分别是上外边距、右外边距、下外边距、左外边距。（顺时针）
+
+**相邻块元素的垂直外边距的合并**
+![alt text](image-15.png)
+
+**嵌套的块元素的垂直外边距的塌陷**
+![alt text](image-16.png)
+
+**清除内外间距**
+![alt text](image-17.png)
+
+**案例参考（快报模块**）：参考 kuaibao.html
